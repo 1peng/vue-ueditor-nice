@@ -1,0 +1,25 @@
+{
+  "name": "vue-ueditor-nice",
+  "version": "0.0.3",
+  "description": "a wrapper of UEditor for vue 2.x",
+  "author": "王一鹏<yipengwang1207@gmail.com>",
+  "private": false,
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./index.js",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "keywords": [
+    "vue",
+    "ueditor"
+  ]
+}

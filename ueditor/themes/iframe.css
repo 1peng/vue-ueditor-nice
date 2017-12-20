@@ -1,0 +1,41 @@
+/*可以在这里添加你自己的css*/
+body.view{
+	font-size: 16px;
+  line-height: 24px;
+}
+blockquote{
+      margin: 30px 0 0;
+      padding: 23px 20px 23px 55px;
+      background: #fafafa url('default/images/blockquoteup.png') 18px 20px no-repeat ;
+      border: 1px solid #f3f3f3;
+      line-height: 28px;
+}
+blockquote p{
+    padding-right:28px;
+}
+blockquote p:last-child{
+    padding-bottom: 10px;
+    background: #fafafa url('default/images/blockquotedown.png') 100% 100% no-repeat
+}
+body.view img{
+	max-width: 872px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 750px) {
+  body.view img{
+    max-width: 685px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  body.view img{
+    max-width: 272px;
+    margin-top: 10px;
+  }
+}
+body.view table img{
+  width: 100%;
+}
+blockquote a{
+  text-decoration: none;
+}

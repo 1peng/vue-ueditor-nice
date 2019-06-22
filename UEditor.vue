@@ -1,6 +1,6 @@
 <template>
   <div>
-    <script :id="editorId" name="content" type="text/plain"></script>
+    <script :id="id" name="content" type="text/plain"></script>
   </div>
 </template>
 <script>
@@ -27,6 +27,7 @@ export default {
   },
   data () {
     return {
+      id: '',
       instance: null,
       // scriptTagStatus -> 0:代码未加载，1:两个代码依赖加载了一个，2:两个代码依赖都已经加载完成
       scriptTagStatus: 0
@@ -85,6 +86,7 @@ export default {
       this.initEditor()
     },
     initEditor () {
+      this.id = 'editor_' + Math.random().toString(16).slice(-6);
       // scriptTagStatus 为 2 的时候，说明两个必需引入的 js 文件都已经被引入，且加载完成
       if (this.scriptTagStatus === 2 && this.instance === null) {
         // Vue 异步执行 DOM 更新，这样一来代码执行到这里的时候可能 template 里面的 script 标签还没真正创建

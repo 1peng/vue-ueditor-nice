@@ -92,7 +92,8 @@ export default {
         // Vue 异步执行 DOM 更新，这样一来代码执行到这里的时候可能 template 里面的 script 标签还没真正创建
         // 所以，我们只能在 nextTick 里面初始化 UEditor
         this.$nextTick(() => {
-          this.instance = window.UE.getEditor(this.editorId, this.ueditorConfig)
+          this.instance = window.UE.getEditor(this.id, this.ueditorConfig)
+          // this.instance.removeListener('ready')
           // 绑定事件，当 UEditor 初始化完成后，将编辑器实例通过自定义的 ready 事件交出去
           this.instance.addListener('ready', () => {
             this.$emit('ready', this.instance)

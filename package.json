@@ -1,6 +1,6 @@
 {
   "name": "vue-ueditor-nice",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "a wrapper of UEditor for vue 2.x",
   "author": "王一鹏<yipengwang1207@gmail.com>",
   "private": false,
